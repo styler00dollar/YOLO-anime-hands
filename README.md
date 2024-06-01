@@ -1,8 +1,8 @@
-# YOLOv8-anime-hands
-
+# YOLO-anime-hands
+Example with YOLOv8x:
 ![yolo](https://github.com/styler00dollar/YOLOv8-anime-hands/assets/51405565/c0c820d2-24d8-4d4a-b452-ad8e20811275)
 
-I used [gwerns hand dataset](https://gwern.net/crop) and trained YOLOv8 with [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics). I modified the code to use Prodigy with 1 and applied batch 30. Afterwards I finetuned with a self-made custom dataset due to various reasons. The precision of annotations in gwerns dataset seems to be not that good and that is visible in the detection bounding box. A model that is trained with that data struggles with gloves, handshakes and more complex hands. Due to that, I created a dataset with 924 images that contains humanly drawn and diffusion images to make detections more accurate and more robust. I also tried to train nano and medium sized yolo, but that resulted in models with severe accuracy problems.
+I used [gwerns hand dataset](https://gwern.net/crop) and trained YOLOv8 with [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics). I finetuned with a self-made custom dataset due to various reasons. A model that is trained with that data struggles with gloves, handshakes and more complex hands. I also tried to train nano and medium sized yolo, but that resulted in models with severe accuracy problems.
 
 There is also [adetailer](https://huggingface.co/Bingsu/adetailer) which has multiple models for this task, but these models usually have low conficence detections in drawn images which are sometimes below 50% and are prone to misdetection.
 
@@ -63,8 +63,31 @@ for file_name in os.listdir(input_folder):
 
 ## Graphs
 
-xl:
+YOLOv8x with gwerns dataset:
+- batch 30
+- 5371 images
+
 ![results](https://github.com/styler00dollar/YOLOv8-anime-hands/assets/51405565/ed921cff-5f54-418f-b1f3-83f69e87981d)
 
-finetuned xl:
+Finetuned YOLOv8x with own dataset:
+- batch 30
+- 924 images
+
 ![results](https://github.com/styler00dollar/YOLOv8-anime-hands/assets/51405565/e684f351-ded3-460d-93c1-7f89df38049c)
+
+YOLOv9e with gwerns dataset:
+- 1181 epochs
+- 53.533 hours
+- batch 14
+- 5371 images
+
+![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/aaae8564-0d55-49a7-8fbb-fffe5f491b54)
+
+Finetuned YOLOv9e with own dataset:
+- 725 epochs
+- 6.852 hours
+- batch 14
+- 1069 images
+
+![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/6237c61a-9fb3-4b85-a23a-7d53dc3a38b3)
+
