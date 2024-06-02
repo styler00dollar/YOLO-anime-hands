@@ -88,8 +88,7 @@ YOLOv9e with gwerns dataset:
 - 53.533 hours
 - batch 14
 - dataset:
-    - [gwern](https://gwern.net/crop#hands-download)
-    - 5371 images
+    - [gwern](https://gwern.net/crop#hands-download) (5371 images)
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/aaae8564-0d55-49a7-8fbb-fffe5f491b54)
 
@@ -98,14 +97,14 @@ Finetuned YOLOv9e with own dataset:
 - 6.852 hours
 - batch 14
 - dataset:
-    - own custom data
-    - 1069 images
+    - own custom data (1069 images)
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/6237c61a-9fb3-4b85-a23a-7d53dc3a38b3)
 
 YOLOv9e gwern + own: 
 - 1177 epochs
 - 56.442 hours
+- batch 14
 - dataset:
     - [gwern](https://gwern.net/crop#hands-download) (5371 images)
     - own data (1069 images)
