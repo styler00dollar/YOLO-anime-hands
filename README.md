@@ -65,7 +65,7 @@ for file_name in os.listdir(input_folder):
 
 Training with a 4090 and Prodigy optimizer set to 1. Using [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) commit `db2af70d3910f168a62ecaae4d920e1440f08c7e` because newer versions seem to have converging problems and train much slower. May be due to unsuitable defaults.
 
-YOLOv8x with gwerns dataset:
+YOLOv8x_* [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_results.csv)
 - 992 epochs
 - batch 30 (?)
 - dataset:
@@ -74,7 +74,8 @@ YOLOv8x with gwerns dataset:
  
 ![results](https://github.com/styler00dollar/YOLOv8-anime-hands/assets/51405565/ed921cff-5f54-418f-b1f3-83f69e87981d)
 
-Finetuned YOLOv8x with own dataset:
+YOLOv8x_*_finetuned: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_finetuned.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_finetuned_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_results_finetuned.csv)
+- used gwern trained YOLOv8x as pretrain
 - 704 epochs
 - batch 30 (?)
 - dataset:
@@ -83,7 +84,7 @@ Finetuned YOLOv8x with own dataset:
 
 ![results](https://github.com/styler00dollar/YOLOv8-anime-hands/assets/51405565/e684f351-ded3-460d-93c1-7f89df38049c)
 
-YOLOv9e with gwerns dataset:
+YOLOv9e_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results.csv)
 - 1181 epochs
 - 53.533 hours
 - batch 14
@@ -92,7 +93,8 @@ YOLOv9e with gwerns dataset:
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/aaae8564-0d55-49a7-8fbb-fffe5f491b54)
 
-Finetuned YOLOv9e with own dataset:
+YOLOv9e_*_finetuned: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_finetuned.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_finetuned.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_finetuned_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_finetuned_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results_finetuned.csv)
+- used gwern trained YOLOv9e as pretrain
 - 725 epochs
 - 6.852 hours
 - batch 14
@@ -101,7 +103,7 @@ Finetuned YOLOv9e with own dataset:
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/6237c61a-9fb3-4b85-a23a-7d53dc3a38b3)
 
-YOLOv9e gwern + own: 
+YOLOv9e_gwern+own_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_best_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_last_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results_gwern+own.csv)
 - 1177 epochs
 - 56.442 hours
 - batch 14
