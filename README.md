@@ -103,8 +103,16 @@ Finetuned YOLOv9e with own dataset:
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/6237c61a-9fb3-4b85-a23a-7d53dc3a38b3)
 
+YOLOv9e gwern + own: 
+- 1177 epochs
+- 56.442 hours
+- dataset:
+    - [gwern](https://gwern.net/crop#hands-download) (5371 images)
+    - own data (1069 images)
+
+![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/28811ad0-3530-44ae-b0a0-a33d77b4a453)
+
 WIP:
-- YOLOv9e with [gwern](https://gwern.net/crop#hands-download) + own data
 - YOLOv9e with [gwern](https://gwern.net/crop#hands-download) + own data + [1-yshhi/anhdet](https://universe.roboflow.com/1-yshhi/anhdet) + [catwithawand/hand-detection-fuao9](https://universe.roboflow.com/catwithawand/hand-detection-fuao9)
 
 Dataset graphs:
@@ -112,6 +120,7 @@ Dataset graphs:
 Gwerns dataset (5371 images):
 
 - [gwern](https://gwern.net/crop#hands-download) (5371 images)
+
 
 ![labels](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/ebe840c4-698d-4675-85c2-bd05c6573792)
 
