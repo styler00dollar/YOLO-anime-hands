@@ -65,26 +65,24 @@ for file_name in os.listdir(input_folder):
 
 Training with a 4090 and Prodigy optimizer set to 1. Using [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) commit `db2af70d3910f168a62ecaae4d920e1440f08c7e` because newer versions seem to have converging problems and train much slower. May be due to unsuitable defaults.
 
-YOLOv8x_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_fp16_op18.onnx.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_results.csv)
+YOLOv8x_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_fp16_op18.onnx) [best dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_dynamic_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_fp16_op18.onnx.onnx) [last dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_dynamic_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_results.csv)
 - 992 epochs
 - batch 30 (?)
 - dataset:
-    - [gwern](https://gwern.net/crop#hands-download)
-    - 5371 images
+    - [gwern](https://gwern.net/crop#hands-download) (5371 images)
  
 ![results](https://github.com/styler00dollar/YOLOv8-anime-hands/assets/51405565/ed921cff-5f54-418f-b1f3-83f69e87981d)
 
-YOLOv8x_*_finetuned: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_finetuned.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_finetuned.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_finetuned_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_finetuned_fp16_op18.onnx.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_results_finetuned.csv)
+YOLOv8x_*_finetuned: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_finetuned.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_finetuned.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_finetuned_fp16_op18.onnx) [best dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_best_finetuned_dynamic_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_finetuned_fp16_op18.onnx.onnx) [last dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_last_finetuned_dynamic_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv8x_results_finetuned.csv)
 - used gwern trained YOLOv8x as pretrain
 - 704 epochs
 - batch 30 (?)
 - dataset:
-    - own custom data
-    - 924 images
+    - own custom data (924 images)
 
 ![results](https://github.com/styler00dollar/YOLOv8-anime-hands/assets/51405565/e684f351-ded3-460d-93c1-7f89df38049c)
 
-YOLOv9e_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results.csv)
+YOLOv9e_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_fp16_op18.onnx) [best dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_best_dynamic_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_fp16_op18.onnx) [last dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_last_dynamic_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results.csv)
 - 1181 epochs
 - 53.533 hours
 - batch 14
@@ -93,7 +91,7 @@ YOLOv9e_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/do
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/aaae8564-0d55-49a7-8fbb-fffe5f491b54)
 
-YOLOv9e_*_finetuned: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_finetuned.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_finetuned.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_finetuned_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_finetuned_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results_finetuned.csv)
+YOLOv9e_*_finetuned: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_finetuned.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_finetuned.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_finetuned_fp16_op18.onnx) [best dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_best_finetuned_dynamic_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_finetuned_fp16_op18.onnx) [last dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_last_finetuned_dynamic_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results_finetuned.csv)
 - used gwern trained YOLOv9e as pretrain
 - 725 epochs
 - 6.852 hours
@@ -103,18 +101,27 @@ YOLOv9e_*_finetuned: [best](https://github.com/styler00dollar/YOLO-anime-hands/r
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/6237c61a-9fb3-4b85-a23a-7d53dc3a38b3)
 
-YOLOv9e_gwern+own_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_best_fp16_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_last_fp16_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results_gwern+own.csv)
+YOLOv9e_gwern+own_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_best_fp16_op18.onnx) [best dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_best_dynamic_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_last_fp16_op18.onnx) [last dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_gwern+own_last_dynamic_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_results_gwern+own.csv)
 - 1177 epochs
 - 56.442 hours
 - batch 14
-- dataset:
+- dataset (6440 images):
     - [gwern](https://gwern.net/crop#hands-download) (5371 images)
     - own data (1069 images)
 
 ![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/28811ad0-3530-44ae-b0a0-a33d77b4a453)
 
-WIP:
-- YOLOv9e with [gwern](https://gwern.net/crop#hands-download) + own data + [1-yshhi/anhdet](https://universe.roboflow.com/1-yshhi/anhdet) + [catwithawand/hand-detection-fuao9](https://universe.roboflow.com/catwithawand/hand-detection-fuao9)
+YOLOv9e_all_*: [best](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_best.pt) [last](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_last.pt) [best onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_best_fp16_op18.onnx) [best dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_best_dynamic_op18.onnx) [last onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_last_fp16_op18.onnx) [last dynamic onnx](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/YOLOv9e_all_last_dynamic_op18.onnx) [csv](https://github.com/styler00dollar/YOLO-anime-hands/releases/download/models/results_all.csv)
+- 1166 epochs 
+- 172.749 hours (~7.2 days)
+- batch 14
+- dataset (17392 images):
+    - [gwern](https://gwern.net/crop#hands-download) (5371 images)
+    - own data (1069 images)
+    - [1-yshhi/anhdet](https://universe.roboflow.com/1-yshhi/anhdet) (5705 images)
+    - [catwithawand/hand-detection-fuao9](https://universe.roboflow.com/catwithawand/hand-detection-fuao9) (5247 images)
+
+![results](https://github.com/styler00dollar/YOLO-anime-hands/assets/51405565/dc83cb22-b43b-4c89-b1ab-1aed0bf39058)
 
 Dataset graphs:
 
